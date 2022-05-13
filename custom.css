@@ -1,13 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
+
+.animated-text {
+    margin-top: 15px;
+    margin-left: 75px;
+
+
+}
+
+.animation::before{
+    content: "";
+    animation: animate infinite 8s;
+}
+
+@keyframes animate {
+    0%{
+        content: "advanture";
+    }
+    25%{
+        content: "advanture";
+    }
+    50%{
+        content: "friendship";
+    }
+    75%{
+        content: "life";
+    }
+    100%{
+        content: "food";
+    }
+}
 
 
 .centered {
     margin-top: 20px;
     margin-left: 55px;
 
-    
+
 }
 
+.text {
+    font-size: 22px;
+}
+
+.bold-text {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline;
+}
 .img-text{
 	top:50%;
     left: 50%;
@@ -41,9 +83,9 @@
 
 .bar {
     background-color: #7953F5;
-    opacity: 0.51;
-    top: 57.5%;
-    left: 50%;
+    opacity: 0.7;
+    top: 60%;
+    left: 51%;
     transform: translate(-50%, -50%);
     width: 47.5%;
     height: 2%;
@@ -63,7 +105,48 @@
 
 #overviewpara {
     left: 10%;
-    line-height: 3;
+    line-height: 2;
     font-weight: 400;
 }
 
+.navbar-brand {
+    width: 4%;
+    height: 4%;
+}
+
+.logo-middle{
+    width: 50%;
+    height: 50%;
+}
+
+.title {
+    font-weight: bold;
+    background: linear-gradient(0deg, #BBA7FA 50%, #FFFFFF 50%);
+}
+
+.title-grey {
+    font-weight: bold;
+    background: linear-gradient(0deg, #BBA7FA 50%, #F7F7F7 50%);
+}
+
+.team-image{
+    width: 1000px;
+}
+
+.illustraion {
+    height: 275px;
+}
+
+.screen {
+    height: 500px
+}
+
+.padding {
+    padding: 0 15px;
+}
+
+.feature-text {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline #7953F5 5px;
+}

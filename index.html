@@ -13,6 +13,9 @@
       crossorigin="anonymous"/>
 
     <link rel="stylesheet" type="text/css" media="screen" href="custom.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -33,7 +36,7 @@
             <div class="image-container">
                 <img src="img/header.png" class="img-fluid" />
                 <div class="img-text h1 ">
-                    <p class=" .mx-auto centered">Bump into adventures</p>
+                    <p class=" .mx-auto animated-text">Bump into <span class="animation"></span></p>
                 </div>
                 <div class="bar"></div>
                 <div class="img-text-2 h3">
@@ -47,31 +50,31 @@
 
         <div class="container.fluid container-2">
             <div class="row pt-5 pb-5">
-                <div class="col-4 align-self-center d-flex justify-content-center">
-                    <img src="img/logo.png">
+                <div class="col-4 align-self-center d-flex justify-content-end">
+                    <img src="img/logo.png" class="logo-middle">
                 </div>
                 
                 <div class="col-6 overview">
                     <div class="row"> 
                         <div class="col-4"></div>
-                        <h5 class=" d-flex justify-content-center h2">Overview</h5>
+                        <h5 class=" d-flex justify-content-center h1 title">Overview</h5>
                     </div>
                     
                     <div class="row mt-5"></div>
 
                     <div class="row"> </div>
                         
-                    <p class="d-flex justify-content-center">
+                    <p class="d-flex justify-content-center text">
                         Seattle has a net migration of 6,164 people in the age of 25 - 34 which the age group is 34% of city’s population. 
                         People who moved to a new city might miss opportunities to go out and socialize because they don't know what 
                         activities you can do in the city or who to do them with. Additionally, covid has also minimized the in-person 
                         social interaction. All of these together enhance isolation. 
                     </p>
-                    <p>    
+                    <p class="text">    
                         Our goal is to provide people a tool to search and seek activities in Seattle to help them adapt to the city faster.
                     </p>
 
-                    <p class="h4">Enjoy your life in Seattle with BUMP!!</p>
+                    <p class="bold-text">Enjoy your life in Seattle with BUMP!!</p>
                 </div>
 
             </div>
@@ -83,13 +86,13 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 mb-5 pb-5">
-                    <p class="h2 mt-5 mb-5 ">Who is BUMP For?</p>
+                    <p class="h1 mt-5 mb-5"><span class="title-grey">Who is BUMP For?</span></p>
                     <div class="row">
                         <div class="col-4 mt-5">
                             <img src="img/image19.png">
                         </div>
 
-                        <div class="col-6 ml-5 pl-5 d-flex justify-content-center align-self-center" id="overviewpara">
+                        <div class="col-6 ml-5 pl-5 d-flex justify-content-center align-self-center text" id="overviewpara">
                                     <p>
                                         Seeing a hunger for social contact for people who is new to Seattle, 
                                         espcially for those in their 20s, we want to use this opportunity to help them 
@@ -107,45 +110,95 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <p class="h2 mt-5 mb-5 ">Why BUMP?</p>
+                    <div class="mt-5 mb-5">
+                    <p class="h1"><span class="title">Why BUMP?</span></p>
+                    </div>
                     <div class="row mb-5">
                         <div class="col-4 mt-5">
-                            <img src="img/img1.png">
+                            <img src="img/img1.png" class="illustraion">
+                            <p class="text">Find more ideas about where to go in Seattle</p>
                         </div>
 
                         <div class="col-3"></div>
 
                         <div class="col-4 mt-5">
-                            <img src="img/img2.png">
+                            <img src="img/img2.png" class="illustraion">
+                            <p class="text">Simple and easy-to-use tool</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-4 mt-5">
-                            <img src="img/img3.png">
+                            <img src="img/img3.png" class="illustraion">
+                            <p class="text">Recommendation system to show the results that fits your interest</p>
                         </div>
 
                         <div class="col-3"></div>
 
                         <div class="col-4 mt-5">
-                            <img src="img/img4.png">
+                            <img src="img/img4.png" class="illustraion">
+                            <p class="text">Create cards to share your experience</p>
                         </div>
                     </div>
 
 
                 </div>
-                <div class="col-1"></div>
+                <div class="col-1 mb-5 pb-5"></div>
             </div>
         </div>
+        <div class="container.fluid bg-light pt-5 mb-5 pb-5" >
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="mt-5 mb-5">
+                        <p class="h1"><span class="title-grey">Features</span></p>
+                    </div>
+                </div>   
+            </div>
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <div class="">
+                    <img src="img/screen1.png" class="screen">
+                </div>
+                <div >
+                    <p class="feature-text mt-5">Explore Cards</p>
+                    <p class="text">Users can swipe to see different cards and experience.<br> 
+                        With our recommendation system, users can get a <br>
+                        personalized list of cards as they use the app more. </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-2"></div>
+                <div >
+                    <p class="feature-text mt-5 col-6">Save Cards</p>
+                    <p class="text padding">Users can save cards for later by click <br> 
+                        the save button on the cards, and they can find <br> 
+                        the cards they save on the save card page.</p>
+                </div>
+                <img src="img/screen3.png" class="screen">
+                
+            </div>
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <img src="img/screen2.png" class="screen">
+                <div >
+                    <p class="feature-text mt-5">Create Cards</p>
+                    <p class="text">Users can create cards about their<br>
+                        experience in Seattle, and those cards will be <br>
+                        the shared with other users.</p>
+                </div>
+            </div>
+            <div class="col-1 mb-5 pb-5"></div>
+        </div>
 
-        <div class="container.fluid bg-light mb-5 pb-5" >
+        <div class="container.fluid bg-white mb-5 pb-5" >
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 mb-5 pb-5">
-                    <p class="h2 mt-5 mb-5 ">Our Team</p>
+                    <p class="h1 mt-5 mb-5 "><span class="title">Our Team</span></p>
                     <div class="row">
                         <div class="col-4 mt-5">
-                            <img src="img/team.png">
+                            <img src="img/team.jpg" class="team-image">
                         </div>
 
                         
